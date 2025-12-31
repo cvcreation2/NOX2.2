@@ -1,0 +1,67 @@
+{
+  "id": "nox-vpn-pro-v1",
+  "name": "Nox VPN Pro",
+  "short_name": "nox",
+  "description": "Professional High-Speed VPN Client with Modern UI",
+  "start_url": "./index.html",
+  "scope": "/",
+  "dir": "ltr",
+  "lang": "en",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "categories": [
+    "utilities",
+    "productivity",
+    "security"
+  ],
+  "icons": [
+    {
+      "src": "https://file-service.main.prod.aws.magicschool.ai/feedback_images/2e0882e7-9d7a-42b7-a36c-2f92f2549a1d_1740626573752.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://file-service.main.prod.aws.magicschool.ai/feedback_images/2e0882e7-9d7a-42b7-a36c-2f92f2549a1d_1740626573752.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 800%22><rect width=%22400%22 height=%22800%22 fill=%22%23020617%22/><rect x=%2220%22 y=%2250%22 width=%22360%22 height=%22700%22 rx=%2220%22 fill=%22%231e293b%22 opacity=%220.5%22/><circle cx=%22200%22 cy=%22300%22 r=%2280%22 stroke=%22%237c3aed%22 stroke-width=%2210%22 fill=%22none%22/><text x=%22200%22 y=%22320%22 font-family=%22sans-serif%22 font-size=%2240%22 fill=%22white%22 text-anchor=%22middle%22>NOX</text><rect x=%2250%22 y=%22500%22 width=%22300%22 height=%22100%22 rx=%2210%22 fill=%22%237c3aed%22/></svg>",
+      "sizes": "400x800",
+      "type": "image/svg+xml",
+      "form_factor": "narrow",
+      "label": "Home Screen"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><rect width=%22800%22 height=%22600%22 fill=%22%23020617%22/><rect x=%2250%22 y=%2250%22 width=%22700%22 height=%22500%22 rx=%2220%22 fill=%22%231e293b%22 opacity=%220.5%22/><circle cx=%22400%22 cy=%22300%22 r=%22100%22 stroke=%22%237c3aed%22 stroke-width=%2215%22 fill=%22none%22/><text x=%22400%22 y=%22320%22 font-family=%22sans-serif%22 font-size=%2260%22 fill=%22white%22 text-anchor=%22middle%22>CONNECTED</text></svg>",
+      "sizes": "800x600",
+      "type": "image/svg+xml",
+      "form_factor": "wide",
+      "label": "Dashboard"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Quick Connect",
+      "short_name": "Connect",
+      "url": "./index.html?action=connect",
+      "icons": [{ "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%2310b981%22/></svg>", "sizes": "192x192", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Settings",
+      "short_name": "Config",
+      "url": "./index.html?action=settings",
+      "icons": [{ "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%2225%22 y=%2225%22 width=%2250%22 height=%2250%22 fill=%22%2394a3b8%22/></svg>", "sizes": "192x192", "type": "image/svg+xml" }]
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "auto"
+  },
+  "display_override": ["window-controls-overlay", "minimal-ui"]
+}

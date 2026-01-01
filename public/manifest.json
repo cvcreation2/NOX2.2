@@ -1,24 +1,75 @@
-<head>
-  <!-- Basic Meta -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NOX VPN</title>
-
-  <!-- PWA Manifest -->
-  <link rel="manifest" href="/manifest.json" />
-
-  <!-- Theme colors for Chrome, Edge, and Windows -->
-  <meta name="theme-color" content="#4a90e2" />
-  <meta name="msapplication-TileColor" content="#4a90e2" />
-  <meta name="msapplication-TileImage" content="/icons/maskable-512.png" />
-
-  <!-- Optional: Apple Touch Icon (for iOS) -->
-  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-
-  <!-- Optional: Display Mode -->
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-
-  <!-- Other SEO / favicon if needed -->
-  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
-</head>
+{
+  "id": "/",
+  "name": "NOX VPN",
+  "short_name": "Nox",
+  "description": "Fast and secure VPN service with NOX VPN",
+  "start_url": "https://nox-2-2-5zqqayuzf-vincentcs-projects-49b28981.vercel.app/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4a90e2",
+  "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/icons/screenshot-1.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/screenshot-2.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Quick Connect",
+      "short_name": "Connect",
+      "description": "Connect to VPN quickly",
+      "url": "/connect",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "file_handlers": [],
+  "launch_handler": { "client_mode": "navigate-existing" },
+  "protocol_handlers": [],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": { "title": "title", "text": "text", "url": "url" }
+  },
+  "iarc_rating_id": "none",
+  "widgets": [],
+  "edge_side_panel": { "default": "https://nox-2-2-5zqqayuzf-vincentcs-projects-49b28981.vercel.app/" },
+  "display_override": ["window-controls-overlay", "minimal-ui", "standalone"],
+  "note_taking": { "id": "nox-vpn-note-taking" }
+}
